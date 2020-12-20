@@ -11,7 +11,7 @@ from datetime import date
 chrome_path = "C:\Program Files\Google\Chrome\Application\chromedriver"
 thema_page = """https://finance.naver.com/sise/theme.nhn?&page={0}"""
 NAVI_PAGE_NUM = 6
-col_lab_1 = ["테마", "기업명", "기업개요", "시가총액(억)", "영업이익(억)", "영업이익증가율(%)", "외국인비중(%)", "PER"]
+col_lab_1 = ["테마", "기업명", "편입사유", "시가총액(억)", "영업이익(억)", "영업이익증가율(%)", "외국인비중(%)", "PER"]
 
 '''************************************************
 * @Function Name : get_page
