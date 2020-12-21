@@ -148,15 +148,19 @@ def get_thema_coinfo(html, thema_name):
 
         #co_info = CoInfo(thema_name, info_co_name, info_txt, info_vals[AVSL], info_vals[B_PROFIT], info_vals[B_PROFIT_RATE], info_vals[FORIGN_RATE], info_vals[PER])
         print(info_co_name)
-
         try:
             sales_acc = int(info_vals[SALES].get_text().replace(',',''))
-            b_profit = int(info_vals[B_PROFIT].get_text().replace(',',''))
-            per = float(info_vals[PER].get_text().replace(',',''))
-
         except:
             sales_acc = 0
+
+        try:
+            b_profit = int(info_vals[B_PROFIT].get_text().replace(',',''))
+        except:
             b_profit = 0
+
+        try:
+            per = float(info_vals[PER].get_text().replace(',',''))
+        except:
             per = 0
 
         co_info_lst = [thema_name,
